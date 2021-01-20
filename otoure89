@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+void printElementOf100(int Numb) {
+
+	for (int i = 1; i <= Numb; i++) {
+		if (i % 3 == 0 && i % 5 == 0) 
+			cout << "CracklePop" << "\t";
+		else if (i % 5 == 0)
+			cout << "Pop" << "\t";
+		else if (i % 3 == 0)
+			cout << "Crackle" << "\t";
+		else
+			cout << i << "\t";
+	}
+}
+int main() {
+	int N = 100;
+
+	//Call the function
+	printElementOf100(N);
+
+	system("PAUSE");
+	return 0;
+}
